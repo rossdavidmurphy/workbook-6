@@ -26,13 +26,13 @@ public class Person implements Comparable<Person>{
 //    public int compareTo(Person person) {
 //        return this.lastName.compareTo(person.lastName);
 //    }
-@Override
-public int compareTo(Person person) {
-    int lastNameComparison = this.lastName.compareTo(person.lastName);
-    if (lastNameComparison != 0) {
-        return lastNameComparison;
-    } else {
-        return this.firstName.compareTo(person.firstName);
+    @Override
+    public int compareTo(Person person) {
+        int lastNameComparison = this.lastName.compareTo(person.lastName);
+        if (lastNameComparison != 0) {
+            return lastNameComparison;
+        } else {
+            return this.firstName.compareTo(person.firstName);
+        }
     }
-}
 }
